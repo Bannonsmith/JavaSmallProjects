@@ -15,6 +15,22 @@ public class DogPlayground {
         myDog.breed = "Terrier";
         myDog.isFed = false;
 
+
+        Dog d2 = new Dog("Lucky", 10, "Golden Retriever", true);
+
+        /* System.out.println("myDogs's name is " + myDog.name);
+        System.out.println("d2's name is " + d2.name); */
+
+        Dog d3 = new Dog("Happy");
+        System.out.println("d3's isFed = " + d3.isFed);
+
         myDog.bark();
+        d2.bark();
+        d3.bark();
+
+        System.out.println(myDog);
+        System.out.println(d2);
+        System.out.println(d3);
+
     }
 }

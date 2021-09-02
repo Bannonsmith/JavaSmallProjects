@@ -48,9 +48,45 @@ public class Dog {
         - ** N.B. if you provide a constructor, the default one is 'lost'
      */
 
+    //No-args constructor
+    public Dog() {}
+
+    //
+
+    // Construct overloading - we can define more than one constructor for a class so long as there are different names or types of parameters
+    public Dog(String name) {
+        this.name = name;
+        this.isFed = false;
+        /* if we use this single argument constructor, each Dog Object that we create using it, will have it's initial state
+        of isFed set to false
+                */
+    }
+
+
+    // Declaring a new Constructor that takes in 4 arguments
+    public Dog(String name, int size, String breed, boolean isFed) {
+        /*the 'this' keyword is used for self-reference - it refers to the object that is calling the method
+            or this instance of the class*/
+        this.name = name;
+        this.size = size;
+        this.breed = breed;
+        this.isFed = isFed;
+
+
+    }
+
     //Methods - that are unique to the Dog Class
     public void bark() {
         System.out.println("The Dog goes bark");
+        System.out.println(this.name + " goes bark bark");
+    }
+
+
+    @Override
+    public  String toString() {
+        return "Dog [name=" + this.name + ", size=" + this.size + ", breed=" + this.breed + ", isFed=" + this.isFed + "]";
+
+        // we want the console to print: Dog [name=Joey, size=15, breed=Bernese, isFed=true]
     }
 
     /*
