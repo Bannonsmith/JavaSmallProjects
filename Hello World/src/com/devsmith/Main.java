@@ -8,19 +8,31 @@ package com.devsmith;
 public class Main {
 
     public static void main(String[] args) {
-//        Strings
-        String message = "   Hello World   " + "!!    ";
-        System.out.println(message.endsWith("!!"));
-        System.out.println(message.length());
-        System.out.println(message.indexOf("H"));
-        System.out.println(message.replace("!", "*"));
-        System.out.println(message.toLowerCase());
-        System.out.println(message.toUpperCase());
-        System.out.println(message.trim());
+//        ESCAPE SEQUENCES
+//        showing how to add a tab
+        String message = "C\tWINDOWS\\...";
+//        showing how to do a next line
+//        String message = "C\nWINDOWS\\...";
+          //showing how to add in a pathway and to use backslash on the backslashes so the compiler can read it corectly
+//        String message = "C\\WINDOWS\\...";
+//        showing how to add quotation marks in java
+       // String message = "Hello \"Mate\"";
+        System.out.println(message);
+
+
+//        STRINGS
+//        String message = "   Hello World   " + "!!    ";
+//        System.out.println(message.endsWith("!!"));
+//        System.out.println(message.length());
+//        System.out.println(message.indexOf("H"));
+//        System.out.println(message.replace("!", "*"));
+//        System.out.println(message.toLowerCase());
+//        System.out.println(message.toUpperCase());
+//        System.out.println(message.trim());
 
 //        You can also do this to declare the String but not needed
 //        String message = new String("Hello World");
-        System.out.println(message);
+//        System.out.println(message);
 
 //        PRIMITVESTYPES VS REFERENCE TYPES
 //        Point point1 = new Point( x:1, y:1);
