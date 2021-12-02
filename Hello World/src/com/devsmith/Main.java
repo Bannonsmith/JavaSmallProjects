@@ -6,20 +6,27 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        MULTI-DIMENSIONAL ARRAYS
+        
+//        CONSTANTS
+//            final keyword makes it an constants/ cannot be changed
+                final float pi = 3.14F;
+                pi = 1;
 
-        int[][] numbers = { { 1, 2, 3}, {4,5,6 } };
-        System.out.println(Arrays.deepToString(numbers));
 
-        THREE DIMENSIONAL ARRAY
-        int[][][] numbers = new int[2][3][3];
-        numbers[0][0][2] = 1;
-        System.out.println(Arrays.deepToString(numbers));
-
-        TWO DIMENSIONAL ARRAY
-        int[][] numbers = new int[2][3];
-        numbers[0][0] = 1;
-        System.out.println(Arrays.deepToString(numbers));
+//        MULTI-DIMENSIONAL ARRAYS
+//
+//        int[][] numbers = { { 1, 2, 3}, {4,5,6 } };
+//        System.out.println(Arrays.deepToString(numbers));
+//
+//        THREE DIMENSIONAL ARRAY
+//        int[][][] numbers = new int[2][3][3];
+//        numbers[0][0][2] = 1;
+//        System.out.println(Arrays.deepToString(numbers));
+//
+//        TWO DIMENSIONAL ARRAY
+//        int[][] numbers = new int[2][3];
+//        numbers[0][0] = 1;
+//        System.out.println(Arrays.deepToString(numbers));
 
 
 //        ARRAYS
