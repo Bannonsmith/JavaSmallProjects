@@ -2,17 +2,38 @@ package com.devsmith;
 
 
 
+import java.text.FieldPosition;
+import java.text.NumberFormat;
+import java.text.ParsePosition;
 import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
-        MATH CLASS
-        Math.random();
-        Math.ceil() ;
-        Math.max();
-        int result =  Math.round(1.1F);
+        FORMATTING NUMBERS
+        change input into currency
+        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        String result = currency.format(1234567.891);
         System.out.println(result);
+
+        change input into percentage
+        NumberFormat percent = NumberFormat.getPercentInstance();
+        String result = percent.format(1234567.891);
+        System.out.println(result);
+
+        Method Chaining(just keep calling methods on methods. If the first method has a return you can continue to call methods)
+        String result = NumberFormat.getPercentInstance().format(0.1);
+        System.out.println(result);
+
+        
+
+
+//        MATH CLASS
+//        Math.random();
+//        Math.ceil() ;
+//        Math.max();
+//        int result =  Math.round(1.1F);
+//        System.out.println(result);
 
 ////        CASTING
 //      Implicit casting
