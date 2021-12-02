@@ -1,16 +1,40 @@
 package com.devsmith;
 
 
+import org.graalvm.compiler.nodes.graphbuilderconf.IntrinsicContext;
+
 import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
-        
+//        ARITHMETIC EXPRESSIONS
+        AUGEMTED OPERATORS +=, -=, *=, /=
+        x = x + 2;
+        x += 2;
+
+        int x = 1;
+        x++;
+        ++x;
+        System.out.println(x);
+
+
+        double result = (double)10 / (double)3;
+        DIVSION IS SPECIAL IN JAVA THE DIVSION OF TWO *WHOLE NUMBERS* IS A *WHOLE* NUMBER
+        SO THE ANSWER BELOW IS 3: YOU HAVE
+        TO USE TYPECASTING TO FIX THE PROBLEM IF YOU WANT THE TRUE VALUE AND TYPE CAST TO FLOAT OR DOUBLE ON BOTH
+        SIDES OF THE EQUAL SIGN.
+
+        int result = 10 / 3;
+            int result = 10 * 3;
+            int result = 10 - 3;
+            int result = 10 + 3;
+        System.out.println(result);
+
 //        CONSTANTS
 //            final keyword makes it an constants/ cannot be changed
-                final float pi = 3.14F;
-                pi = 1;
+//                final float pi = 3.14F;
+//                pi = 1;
 
 
 //        MULTI-DIMENSIONAL ARRAYS
