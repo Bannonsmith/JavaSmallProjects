@@ -7,27 +7,32 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-//        CASTING
+        MATH CLASS
+        Math.random();
+        Math.ceil() ;
+        Math.max();
+        int result =  Math.round(1.1F);
+        System.out.println(result);
 
-      Implicit casting
-      byte > short > int > long > float > double
-        short x = 1;
-        int y = x + 2;
-        System.out.println(y);
-
-        Impicit casting works because they are all numbers and the program will casting if for you
-        double x = 1.1;
-        int y = (int)x + 2;
-        System.out.println(y);
-
-        Implicit casting also works from primitives to objects like strings
-                String x = "1";
-                Integer.parseInt(x);
-                Float.parseFloat(x);
-                Double.parseDouble(x);
-                int y = (int)x + 2;
-                System.out.println();
-
+////        CASTING
+//      Implicit casting
+//      byte > short > int > long > float > double
+//        short x = 1;
+//        int y = x + 2;
+//        System.out.println(y);
+//
+//        Impicit casting works because they are all numbers and the program will casting if for you
+//        double x = 1.1;
+//        int y = (int)x + 2;
+//        System.out.println(y);
+//
+//        Implicit casting also works from primitives to objects like strings
+//                String x = "1";
+//                Integer.parseInt(x);
+//                Float.parseFloat(x);
+//                Double.parseDouble(x);
+//                int y = (int)x + 2;
+//                System.out.println();
 
 
 
