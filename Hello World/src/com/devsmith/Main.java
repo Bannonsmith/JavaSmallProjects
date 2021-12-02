@@ -1,23 +1,36 @@
 package com.devsmith;
 
 
-
-
-
+import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
+//        ARRAYS
+
+        int[] numbers = {2,3,4,5,6,4,1,5};
+        Arrays.sort(numbers);
+        System.out.println(Arrays.toString(numbers));
+
+        int[] numbers = new int[5];
+        numbers[0] = 1;
+        numbers[1] = 2;
+        numbers[2] = 3;
+        System.out.println(Arrays.toString(numbers));
+        System.out.println(numbers);
+
+
+
 //        ESCAPE SEQUENCES
 //        showing how to add a tab
-        String message = "C\tWINDOWS\\...";
+//        String message = "C\tWINDOWS\\...";
 //        showing how to do a next line
 //        String message = "C\nWINDOWS\\...";
           //showing how to add in a pathway and to use backslash on the backslashes so the compiler can read it corectly
 //        String message = "C\\WINDOWS\\...";
 //        showing how to add quotation marks in java
        // String message = "Hello \"Mate\"";
-        System.out.println(message);
+//        System.out.println(message);
 
 
 //        STRINGS
