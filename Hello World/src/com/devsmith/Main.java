@@ -1,16 +1,31 @@
 package com.devsmith;
 
-import org.w3c.dom.ranges.Range;
 
-import java.util.Date;
+
+import java.awt.*;
+
 
 public class Main {
 
     public static void main(String[] args) {
-//        Reference Type
-        byte age = 30;
-        Date now = new Date();
-        System.out.println(now);
+//        PRIMITVESTYPES VS REFERENCE TYPES
+        Point point1 = new Point( x:1, y:1);
+        Point point2 = point1;
+        point1.x = 2;
+        System.out.println(point2);
+
+
+//        byte x = 1;
+//        byte y = x;
+//        x = 2;
+//        System.out.println(y);
+
+
+
+//      REFERENCE TYPES
+//        byte age = 30;
+//        Date now = new Date();
+//        System.out.println(now);
 //
 //        PRIMITIVE TYPES
 //        byte age = 30;
