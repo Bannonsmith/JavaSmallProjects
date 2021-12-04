@@ -5,17 +5,32 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int temperature = scanner.nextInt();
+        SIMPLIFY IF STATEMENTS
 
-//            IF STATEMENTS
-        if(temperature > 30) {
-            System.out.println("It's a hot day");
-        } else if (temperature > 20) {
-                System.out.println("It's a nice day");
-        } else {
-                System.out.println("It's cold");
-        }
+        int income = 120000;
+        boolean hasHighIncome = income > 100000;
+        System.out.println(hasHighIncome);
+
+        THIS CAN BE RE-EVALUATED INTO ABOVE:
+        int income = 120000;
+        boolean hasHighIncome = false;
+        if (income > 100_000)
+            hasHighIncome = true;
+        else
+            hasHighIncome = false;
+
+
+//        Scanner scanner = new Scanner(System.in);
+//        int temperature = scanner.nextInt();
+//
+////            IF STATEMENTS
+//        if(temperature > 30) {
+//            System.out.println("It's a hot day");
+//        } else if (temperature > 20) {
+//                System.out.println("It's a nice day");
+//        } else {
+//                System.out.println("It's cold");
+//        }
 
 
 //        LOGICAL OPERATORS
