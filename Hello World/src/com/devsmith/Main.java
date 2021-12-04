@@ -5,10 +5,36 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+//        SWITCH STATEMENTS
+        String role = "admin";
+
+        switch (role) {
+            case "admin":
+                System.out.println("You're an admin");
+                break;
+            case "moderator":
+                System.out.println("You're a moderator");
+                break;
+            default:
+                System.out.println("You're a guest");
+        }
+
+//        THIS CAN BE RE-EVALUATED INTO A SWITCH STATEMENT ABOVE:
+
+        if (role == "admin")
+            System.out.println("You're an admin");
+        else if (role == "moderator");
+            System.out.println("You're a moderator");
+        else
+            System.out.println("You're a guest");
+
+
+
+
 //        THE TERNARY OPERATOR
-        int income = 120000;
-        String className = income > 10000 ? "First" : "Economy";
-        System.out.println(className);
+//        int income = 120000;
+//        String className = income > 10000 ? "First" : "Economy";
+//        System.out.println(className);
 
 
 
