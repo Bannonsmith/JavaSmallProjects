@@ -5,15 +5,26 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-//        SCANNER
-                Scanner scanner = new Scanner(System.in);
-                System.out.print("Age: ");
-                byte age = scanner.nextByte();
-                System.out.println("You are " + age);
+//        COMPARISON OPERATORS
+            int x = 1;
+            int y = 1;
+        System.out.println(x == y);
+        System.out.println(x != y);
+        System.out.println(x <= y);
 
-        System.out.print("Name: ");
-        String name = scanner.nextLine().trim();
-        System.out.println("You are " + name);
+
+
+
+
+//        SCANNER
+//                Scanner scanner = new Scanner(System.in);
+//                System.out.print("Age: ");
+//                byte age = scanner.nextByte();
+//                System.out.println("You are " + age);
+//
+//        System.out.print("Name: ");
+//        String name = scanner.nextLine().trim();
+//        System.out.println("You are " + name);
 
 //        FORMATTING NUMBERS
 //        change input into currency
