@@ -1,31 +1,36 @@
 package com.devsmith;
 
-
-
-import java.text.FieldPosition;
-import java.text.NumberFormat;
-import java.text.ParsePosition;
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        FORMATTING NUMBERS
-        change input into currency
-        NumberFormat currency = NumberFormat.getCurrencyInstance();
-        String result = currency.format(1234567.891);
-        System.out.println(result);
+//        SCANNER
+                Scanner scanner = new Scanner(System.in);
+                System.out.print("Age: ");
+                byte age = scanner.nextByte();
+                System.out.println("You are " + age);
 
-        change input into percentage
-        NumberFormat percent = NumberFormat.getPercentInstance();
-        String result = percent.format(1234567.891);
-        System.out.println(result);
+        System.out.print("Name: ");
+        String name = scanner.nextLine().trim();
+        System.out.println("You are " + name);
 
-        Method Chaining(just keep calling methods on methods. If the first method has a return you can continue to call methods)
-        String result = NumberFormat.getPercentInstance().format(0.1);
-        System.out.println(result);
+//        FORMATTING NUMBERS
+//        change input into currency
+//        NumberFormat currency = NumberFormat.getCurrencyInstance();
+//        String result = currency.format(1234567.891);
+//        System.out.println(result);
+//
+//        change input into percentage
+//        NumberFormat percent = NumberFormat.getPercentInstance();
+//        String result = percent.format(1234567.891);
+//        System.out.println(result);
+//
+//        Method Chaining(just keep calling methods on methods. If the first method has a return you can continue to call methods)
+//        String result = NumberFormat.getPercentInstance().format(0.1);
+//        System.out.println(result);
 
-        
+
 
 
 //        MATH CLASS
@@ -42,7 +47,7 @@ public class Main {
 //        int y = x + 2;
 //        System.out.println(y);
 //
-//        Impicit casting works because they are all numbers and the program will casting if for you
+//        Implicit casting works because they are all numbers and the program will casting if for you
 //        double x = 1.1;
 //        int y = (int)x + 2;
 //        System.out.println(y);
