@@ -5,29 +5,63 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-//        SWITCH STATEMENTS
-        String role = "admin";
+//        EXERCISE: FIZZBUZZ
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Number: ");
+        int number = scanner.nextInt();
 
-        switch (role) {
-            case "admin":
-                System.out.println("You're an admin");
-                break;
-            case "moderator":
-                System.out.println("You're a moderator");
-                break;
-            default:
-                System.out.println("You're a guest");
-        }
-
-//        THIS CAN BE RE-EVALUATED INTO A SWITCH STATEMENT ABOVE:
-
-        if (role == "admin")
-            System.out.println("You're an admin");
-        else if (role == "moderator");
-            System.out.println("You're a moderator");
+//        This way has repeated code: The top if statement is then redeclared in pieces further down the line. Does not
+//         practice DRY- "Don't Repeat Yourself"
+        if (number % 3 == 0 && number % 5 == 0)
+            System.out.println("FizzBuzz");
+        else if (number % 3 == 0)
+            System.out.println("Fizz");
+        else if (number % 5 == 0)
+            System.out.println("Buzz");
         else
-            System.out.println("You're a guest");
+            System.out.println("Not a FizzBuzz" + number);
 
+
+//        This if statement practices DRY but now you have conveluded the code with the nested for loop Its harder to read.
+//                When writing code you have to determine which issue you want to have and determine what is best for your code.
+
+        if (number % 5 == 0){
+            if (number % 3 == 0)
+                System.out.println("FizzBuzz");
+            else
+                System.out.println("Fizz");
+        }
+        else if (number % 3 == 0)
+            System.out.println("Buzz");
+        else
+            System.out.println("Not a FizzBuzz" + number);
+
+
+
+
+////        SWITCH STATEMENTS
+//        String role = "admin";
+//
+//        switch (role) {
+//            case "admin":
+//                System.out.println("You're an admin");
+//                break;
+//            case "moderator":
+//                System.out.println("You're a moderator");
+//                break;
+//            default:
+//                System.out.println("You're a guest");
+//        }
+//
+////        THIS CAN BE RE-EVALUATED INTO A SWITCH STATEMENT ABOVE:
+//
+//        if (role == "admin")
+//            System.out.println("You're an admin");
+//        else if (role == "moderator");
+//            System.out.println("You're a moderator");
+//        else
+//            System.out.println("You're a guest");
+//
 
 
 
