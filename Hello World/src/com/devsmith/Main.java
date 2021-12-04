@@ -1,40 +1,72 @@
 package com.devsmith;
 
+import java.awt.image.LookupOp;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-//        EXERCISE: FIZZBUZZ
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Number: ");
-        int number = scanner.nextInt();
+//        FOR LOOPS
+        for (int i = 0; i < 5; i++)
+            System.out.println("Hello World" + i);
+        for (int i = 5; i > 0; i--)
+            System.out.println("Hello World" + i);
 
-//        This way has repeated code: The top if statement is then redeclared in pieces further down the line. Does not
-//         practice DRY- "Don't Repeat Yourself"
-        if (number % 3 == 0 && number % 5 == 0)
-            System.out.println("FizzBuzz");
-        else if (number % 3 == 0)
-            System.out.println("Fizz");
-        else if (number % 5 == 0)
-            System.out.println("Buzz");
-        else
-            System.out.println("Not a FizzBuzz" + number);
+//        WHILE LOOPS
 
-
-//        This if statement practices DRY but now you have conveluded the code with the nested for loop Its harder to read.
-//                When writing code you have to determine which issue you want to have and determine what is best for your code.
-
-        if (number % 5 == 0){
-            if (number % 3 == 0)
-                System.out.println("FizzBuzz");
-            else
-                System.out.println("Fizz");
+        int i = 0;
+        while (i > 0) {
+            System.out.println("Hello World" + i);
+            i--;
         }
-        else if (number % 3 == 0)
-            System.out.println("Buzz");
-        else
-            System.out.println("Not a FizzBuzz" + number);
+
+        Scanner scanner = new Scanner(System.in);
+        String input = "";
+        while (!input.equals("quit")) {
+            System.out.print("Input: ");
+            input = scanner.next().toLowerCase();
+            System.out.println(input);
+
+        }
+
+//            DO WHILE LOOPS
+            do {
+                System.out.print("Input: ");
+                input = scanner.next().toLowerCase();
+                System.out.println(input);
+            } while (!input.equals("quit"));
+
+
+////        EXERCISE: FIZZBUZZ
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Number: ");
+//        int number = scanner.nextInt();
+//
+////        This way has repeated code: The top if statement is then redeclared in pieces further down the line. Does not
+////         practice DRY- "Don't Repeat Yourself"
+//        if (number % 3 == 0 && number % 5 == 0)
+//            System.out.println("FizzBuzz");
+//        else if (number % 3 == 0)
+//            System.out.println("Fizz");
+//        else if (number % 5 == 0)
+//            System.out.println("Buzz");
+//        else
+//            System.out.println("Not a FizzBuzz" + number);
+//
+//
+////        This if statement practices DRY but now you have conveluded the code with the nested for loop Its harder to read.
+////                When writing code you have to determine which issue you want to have and determine what is best for your code.
+//
+//        if (number % 5 == 0){
+//            if (number % 3 == 0)
+//                System.out.println("FizzBuzz");
+//            else
+//                System.out.println("Fizz");
+//        }
+//        else if (number % 3 == 0)
+//            System.out.println("Buzz");
+//        else
+//            System.out.println("Not a FizzBuzz" + number);
 
 
 
