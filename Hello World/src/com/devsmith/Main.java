@@ -5,12 +5,32 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        LOGICAL OPERATORS
+        int temperature = 22;
+        boolean isWarm = temperature > 20 && temperature < 30;
+        System.out.println(isWarm);
+
+
+        boolean hasHighIncome = true;
+        boolean hasGoodCredit = true;
+//        OR OPERATOR
+        boolean isEligible = hasHighIncome || hasGoodCredit;
+        System.out.println(isEligible);
+
+        boolean hasHighIncome = true;
+        boolean hasGoodCredit = true;
+        boolean hasCriminalRecord = false;
+        boolean isEligible = (hasHighIncome || hasGoodCredit) && !hasCriminalRecord ;
+        System.out.println(isEligible);
+
+
+
 //        COMPARISON OPERATORS
-            int x = 1;
-            int y = 1;
-        System.out.println(x == y);
-        System.out.println(x != y);
-        System.out.println(x <= y);
+//            int x = 1;
+//            int y = 1;
+//        System.out.println(x == y);
+//        System.out.println(x != y);
+//        System.out.println(x <= y);
 
 
 
