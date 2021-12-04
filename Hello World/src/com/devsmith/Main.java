@@ -5,19 +5,26 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        SIMPLIFY IF STATEMENTS
-
+//        THE TERNARY OPERATOR
         int income = 120000;
-        boolean hasHighIncome = income > 100000;
-        System.out.println(hasHighIncome);
+        String className = income > 10000 ? "First" : "Economy";
+        System.out.println(className);
 
-        THIS CAN BE RE-EVALUATED INTO ABOVE:
-        int income = 120000;
-        boolean hasHighIncome = false;
-        if (income > 100_000)
-            hasHighIncome = true;
-        else
-            hasHighIncome = false;
+
+
+//        SIMPLIFY IF STATEMENTS
+//
+//        int income = 120000;
+//        boolean hasHighIncome = income > 100000;
+//        System.out.println(hasHighIncome);
+//
+//        THIS CAN BE RE-EVALUATED INTO ABOVE:
+//        int income = 120000;
+//        boolean hasHighIncome = false;
+//        if (income > 100_000)
+//            hasHighIncome = true;
+//        else
+//            hasHighIncome = false;
 
 
 //        Scanner scanner = new Scanner(System.in);
