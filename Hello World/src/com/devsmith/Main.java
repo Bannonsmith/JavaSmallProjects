@@ -6,35 +6,72 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-//        FOR LOOPS
-        for (int i = 0; i < 5; i++)
-            System.out.println("Hello World" + i);
-        for (int i = 5; i > 0; i--)
-            System.out.println("Hello World" + i);
-
-//        WHILE LOOPS
-
-        int i = 0;
-        while (i > 0) {
-            System.out.println("Hello World" + i);
-            i--;
-        }
+//        BREAK AND CONTINUE
 
         Scanner scanner = new Scanner(System.in);
         String input = "";
         while (!input.equals("quit")) {
             System.out.print("Input: ");
             input = scanner.next().toLowerCase();
-            System.out.println(input);
-
+            if (!input.equals("quit"))
+                System.out.println(input);
+        }
+//        Using the break statement instead of the not equals (!): Look at line 16 above
+        Scanner scanner = new Scanner(System.in);
+        String input = "";
+        while (!input.equals("quit")) {
+            System.out.print("Input: ");
+            input = scanner.next().toLowerCase();
+            if (input.equals("quit"))
+                break;
+                System.out.println(input);
         }
 
-//            DO WHILE LOOPS
-            do {
-                System.out.print("Input: ");
-                input = scanner.next().toLowerCase();
-                System.out.println(input);
-            } while (!input.equals("quit"));
+//        Using the CONTINUE statement
+        Scanner scanner = new Scanner(System.in);
+        String input = "";
+        while (true) {
+            System.out.print("Input: ");
+            input = scanner.next().toLowerCase();
+            if (input.equals("pass"))
+                continue;
+            if (input.equals("quit"))
+                break;
+            System.out.println(input);
+        }
+
+
+
+
+////        FOR LOOPS
+//        for (int i = 0; i < 5; i++)
+//            System.out.println("Hello World" + i);
+//        for (int i = 5; i > 0; i--)
+//            System.out.println("Hello World" + i);
+//
+////        WHILE LOOPS
+//
+//        int i = 0;
+//        while (i > 0) {
+//            System.out.println("Hello World" + i);
+//            i--;
+//        }
+//
+//        Scanner scanner = new Scanner(System.in);
+//        String input = "";
+//        while (!input.equals("quit")) {
+//            System.out.print("Input: ");
+//            input = scanner.next().toLowerCase();
+//            System.out.println(input);
+//
+//        }
+//
+////            DO WHILE LOOPS
+//            do {
+//                System.out.print("Input: ");
+//                input = scanner.next().toLowerCase();
+//                System.out.println(input);
+//            } while (!input.equals("quit"));
 
 
 ////        EXERCISE: FIZZBUZZ
